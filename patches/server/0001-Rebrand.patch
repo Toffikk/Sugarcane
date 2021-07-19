@@ -14,7 +14,8 @@ index 9414a05bdd2581b6cd21805958f58ddb0d130046..4367fd55eabd4aaf6e3350da7b6f8700
  dependencies {
 -    implementation(project(":Airplane-API")) // Airplane // Tuinity
 +    implementation(project(":Sugarcane-API")) // Sugarcane // Airplane // Tuinity
-     implementation("com.destroystokyo.paper:paper-mojangapi:1.16.5-R0.1-SNAPSHOT") // Tuinity
+-    implementation("com.destroystokyo.paper:paper-mojangapi:1.16.5-R0.1-SNAPSHOT") // Tuinity
++    implementation(project("Sugarcane-MojangAPI")) // Tuinity // Sugarcane
      // Paper start
      implementation("org.jline:jline-terminal-jansi:3.12.1")
 @@ -91,7 +91,7 @@ tasks.jar {
