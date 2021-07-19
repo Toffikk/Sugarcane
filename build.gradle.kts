@@ -73,6 +73,15 @@ paperweight {
             apiOutputDir.set(layout.projectDirectory.dir("Sugarcane-API"))
             serverOutputDir.set(layout.projectDirectory.dir("Sugarcane-Server"))
         }
+        
+        patchTasks {
+            register("mojangApi") {
+                isBareDirectory.set(true)
+                upstreamDirPath.set("Paper-MojangAPI")
+                patchDir.set(layout.projectDirectory.dir("patches/mojangapi"))
+                outputDir.set(layout.projectDirectory.dir("Sugarcane-MojangAPI"))
+            }
+        }
     }
 }
 
